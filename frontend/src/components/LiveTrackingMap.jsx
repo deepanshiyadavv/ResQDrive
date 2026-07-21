@@ -71,7 +71,7 @@ const LiveTrackingMap = ({ accidentLocation = [28.6139, 77.2090] }) => {
   
   useEffect(() => {
     // Connect to backend Socket.IO
-    const socket = io('http://localhost:5000', {
+    const socket = io('http://resqdrive-1grt.onrender.com', {
       reconnectionAttempts: 5,
       timeout: 10000,
     });

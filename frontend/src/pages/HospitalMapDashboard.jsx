@@ -130,7 +130,7 @@ const HospitalMapDashboard = () => {
 
   // 2. Live Socket Connection — Ambulance Tracking + Emergency SOS
   useEffect(() => {
-    const socket = io('http://localhost:5000', {
+    const socket = io('http://resqdrive-1grt.onrender.com', {
       reconnectionAttempts: 10,
       timeout: 10000,
     });

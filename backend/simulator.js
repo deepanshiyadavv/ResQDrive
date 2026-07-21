@@ -1,5 +1,6 @@
 const io = require("socket.io-client");
-const socket = io("http://localhost:5000");
+const SOCKET_URL = process.env.VITE_BACKEND_URL || "https://resqdrive-1grt.onrender.com";
+const socket = io(SOCKET_URL);
 
 // Start slightly offset from the default Faridabad hospital location (28.3670, 77.3159)
 let currentLat = 28.3500;
