@@ -133,7 +133,7 @@ const SuperAdminDashboard = () => {
 
   // Socket Connection for Live Telemetry
   useEffect(() => {
-    socketRef.current = io('http://resqdrive-1grt.onrender.com');
+    socketRef.current = io('https://resqdrive-1grt.onrender.com');
     socketRef.current.on('telemetry-update', (data) => {
       if (data && data.lat && data.lng) {
         setActiveAmbulance([data.lat, data.lng]);

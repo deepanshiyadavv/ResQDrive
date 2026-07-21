@@ -18,7 +18,7 @@ const AmbulanceDashboard = () => {
   }, [onDuty]);
 
   useEffect(() => {
-    socketRef.current = io('http://resqdrive-1grt.onrender.com');
+    socketRef.current = io('https://resqdrive-1grt.onrender.com');
 
     socketRef.current.on('emergency-sos', (alertData) => {
       if (!onDutyRef.current) return;

@@ -73,7 +73,7 @@ const HospitalDashboard = () => {
 
   // Socket Connection for Live Telemetry
   useEffect(() => {
-    const socket = io('http://resqdrive-1grt.onrender.com');
+    const socket = io('https://resqdrive-1grt.onrender.com');
     
     socket.on('emergency-sos', (alertData) => {
       setSosAlerts(prev => [alertData, ...prev]);
